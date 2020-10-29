@@ -3,7 +3,7 @@ function Player() {
 
     this.x = 13; //left player
     this.y = height / 2;
-    this.v = 3.5; //pixel speed that player will move
+    this.v = 5; //pixel speed that player will move
     this.w = 20; //width attribute 
     this.h = 80; //height attribute
     this.score = 0;
@@ -12,7 +12,6 @@ function Player() {
     this.show = () => {
         rectMode(CENTER); //center the plater 
         rect(this.x, this.y, this.w, this.h) //the player is a rectangle
-        //fill(0);
     }
 
     // function for the player movement

@@ -1,3 +1,4 @@
+
 function Ball() {
     this.x = width / 2; //start position of the ball be at the center
     this.y = height / 2;
@@ -14,10 +15,12 @@ function Ball() {
         //set court boundaries/limits for the ball
         if ( this.y < 1 ) // if y position of the ball is negative
         {
+            courtSound.play();
             this.vy = 2.5; //make y speed be positive again so that it will change direction
         }
         if( this.y > height) //if y is bigger than our court height
         {
+            courtSound.play();
             this.vy = -2.5 //make y negative so that it bounces back 
         }
         this.x = this.x + this.vx; 
