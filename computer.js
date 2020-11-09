@@ -1,7 +1,7 @@
 function Computer() {
     this.x = width - 13;
     this.y = height / 2;
-    this.v = 4; //pixel speed that computer will move
+    this.v = 5.5; //pixel speed that computer will move
     this.w = 20; //width attribute 
     this.h = 80; //height attribute
     this.score = 0;
